@@ -8,6 +8,8 @@ public class HomePage extends BasePage{
 	
 	public By electronicsOption = By.xpath("//*[@text=\"Electronics\"]");
 	
+	public By ourCategories = By.xpath("//android.widget.TextView[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/tvTitle\" and @text=\"OUR CATEGORIES\"]");
+	
 	
 
 }

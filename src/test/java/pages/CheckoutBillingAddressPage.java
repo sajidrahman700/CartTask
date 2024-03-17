@@ -8,9 +8,9 @@ public class CheckoutBillingAddressPage extends BasePage{
 	public By lastNameInputField = By.xpath("//android.widget.EditText[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/etLastName\"]");
 	public By emailInputField = By.xpath("//android.widget.EditText[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/etEmail\"]");
 	public By countrySelectField = By.xpath("//android.widget.Spinner[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/countrySpinner\"]");
-	public By chooseCountry_Bangladesh = By.xpath("//android.widget.ListView/android.widget.TextView[9]");
+	public By chooseCountry_Bangladesh = By.xpath("//*[@text=\"Bangladesh\"][1]");
 	public By stateSelectField = By.xpath("//android.widget.Spinner[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/stateSpinner\"]");
-	public By chooseState_Dhaka = By.xpath("//android.widget.ListView/android.widget.TextView[2]");
+	public By chooseState_Dhaka = By.xpath("//*[@text=\"ঢাকা\"]");
 	public By companyInputField = By.xpath("//android.widget.EditText[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/etCompanyName\"]");
 	public By cityInputField = By.xpath("//android.widget.EditText[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/etCity\"]");
 	public By streetAddressInputField = By.xpath("//android.widget.EditText[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/etStreetAddress\"]");

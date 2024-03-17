@@ -1,6 +1,7 @@
 package utilities;
 
 
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -28,7 +29,7 @@ private static final ThreadLocal<AndroidDriver>  LOCAL_BROWSER = new ThreadLocal
 
     public static AndroidDriver setUp() throws MalformedURLException{
     	    //File path = new File("src\\test\\java\\resources");
-	        //File apk = new File(path, "nopStationCart");
+	        //File apk = new File(path, "nopstationCart.apk");
 	        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 	        //desiredCapabilities.setCapability("appium:deviceName", "local2");
 	        desiredCapabilities.setCapability("appium:udid", "0666125197100696");
@@ -46,13 +47,12 @@ private static final ThreadLocal<AndroidDriver>  LOCAL_BROWSER = new ThreadLocal
     
     public static void openABrowser() throws MalformedURLException{
         AndroidDriver browser = setUp();
-        browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         setBrowser(browser);
     }
 
     
-    public void quiteBrowser(Scenario scenario){
+    public static void quiteBrowser(Scenario scenario){
     	takeScreenShotOnTestFailed(scenario);
         getBrowser().quit();
     }

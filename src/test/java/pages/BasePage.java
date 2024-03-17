@@ -3,18 +3,24 @@ package pages;
 import static utilities.DriverSetup.getBrowser;
 
 import java.time.Duration;
+
 import java.util.List;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 import io.appium.java_client.AppiumBy;
+
+
 
 
 public class BasePage {
@@ -115,5 +121,26 @@ public class BasePage {
 		 getBrowser().findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""+text+"\"))"));
 		 
 	 }
+	 
+	 
+	 public void scrollInHorizontalAppium(String text) {
+		 getBrowser().findElement(AppiumBy.androidUIAutomator(
+	                "new UiScrollable(new UiSelector().scrollable(true).instance(0)).setAsHorizontalList()" +
+	                ".scrollIntoView(new UiSelector().text(\"" + text + "\"))"));
+		 
+	 }
+	 
+	 
+	 public void scrollDownByXPath(String xpath) {
+		 String scrollCommand = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().resourceIdMatches(\"" + xpath + "\").instance(0))";
+		    getBrowser().findElement(AppiumBy.androidUIAutomator(scrollCommand));
+		   
+		}
+	 
+	 public void scrollAction(WebElement x) {
+		 Actions actions = new Actions(getBrowser());
+	     actions.scrollToElement(x);
+	 }
+	
 
 }

@@ -1,10 +1,14 @@
 package pages;
 
+
 import org.openqa.selenium.By;
+
 
 public class CheckoutShippingPage extends BasePage{
 	
-	public By nextDayAirOption = By.xpath("//com.bs.ecommerce.customViews.RadioGridGroupforReyMaterial/android.widget.RelativeLayout[4]");
-	public By continueButton = By.xpath("(//android.widget.Button[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/btnContinue\"])[2]");
+	public By nextDayAirOption = By.xpath("(//*[@text=\"Next Day Air\"])[1]");
+	public By continueButton = By.xpath("(//*[@text=\"CONTINUE\"])[2]");
+	
+	
 
 }

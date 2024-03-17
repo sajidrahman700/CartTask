@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 	
 	public By email = By.xpath("//*[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/loginEmailEditText\"]");
 	public By password = By.xpath("//*[@resource-id=\"com.nopstation.nopcommerce.nopstationcart:id/loginPasswordEditText\"]");

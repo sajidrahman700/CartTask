@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.11.0</version>
+      <version>4.16.1</version>
     </dependency>
      <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
     <dependency>
@@ -85,6 +85,18 @@
       <artifactId>commons-validator</artifactId>
       <version>1.7</version>
     </dependency>
+    
+     <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.1.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.1.0</version>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
@@ -104,7 +116,7 @@
           <properties>
             <property>
               <name>dataproviderthreadcount</name>
-              <value>3</value>
+              <value>0</value>
             </property>
           </properties>
         </configuration>
