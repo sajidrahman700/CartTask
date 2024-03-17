@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 17 19:39:55 BDT 2024</td>
+<td>Started on:</td><td>Sun Mar 17 23:23:32 BDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>223 seconds (223356 ms)</td>
+<tr><td>Total time:</td><td>309 seconds (309170 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,227 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer successfully place order as a guest user", "Optional[PlaceOrder]"</td>
-<td><div><pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class step_defination.PlaceOrderStep
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 45 more
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Dimension cannot be resolved to a type
-	get cannot be resolved
-	Dimension cannot be resolved to a type
-	Dimension cannot be resolved to a type
-	Dimension cannot be resolved to a type
-	driver cannot be resolved to a variable
-	Syntax error on token &quot;.&quot;, @ expected after this token
-	Syntax error on token &quot;)&quot;, delete this token
-	Syntax error, insert &quot;)&quot; to complete SingleMemberAnnotation
-	Syntax error, insert &quot;SimpleName&quot; to complete QualifiedName
-	Syntax error, insert &quot;Identifier (&quot; to complete MethodHeaderName
-	Syntax error, insert &quot;)&quot; to complete MethodDeclaration
-	Syntax error on token &quot;}&quot;, delete this token
-
-	at pages.CheckoutShippingPage.&lt;init&gt;(CheckoutShippingPage.java:22)
-	at step_defination.PlaceOrderStep.&lt;init&gt;(PlaceOrderStep.java:31)
-	... 51 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2062594042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2062594042'><pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class step_defination.PlaceOrderStep
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 45 more
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Dimension cannot be resolved to a type
-	get cannot be resolved
-	Dimension cannot be resolved to a type
-	Dimension cannot be resolved to a type
-	Dimension cannot be resolved to a type
-	driver cannot be resolved to a variable
-	Syntax error on token &quot;.&quot;, @ expected after this token
-	Syntax error on token &quot;)&quot;, delete this token
-	Syntax error, insert &quot;)&quot; to complete SingleMemberAnnotation
-	Syntax error, insert &quot;SimpleName&quot; to complete QualifiedName
-	Syntax error, insert &quot;Identifier (&quot; to complete MethodHeaderName
-	Syntax error, insert &quot;)&quot; to complete MethodDeclaration
-	Syntax error on token &quot;}&quot;, delete this token
-
-	at pages.CheckoutShippingPage.&lt;init&gt;(CheckoutShippingPage.java:22)
-	at step_defination.PlaceOrderStep.&lt;init&gt;(PlaceOrderStep.java:31)
-	... 51 more
-</pre></div></td>
-<td>6</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-<tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer add products in his shopping cart", "Optional[ShoppingCart]"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [03757758-0fc3-4d38-814a-ccaa5cd253c7, findElement {using=xpath, value=//*[@text=&quot;Electronics&quot;]}]
-Capabilities {appium:appActivity: com.bs.ecommerce.main.Splas..., appium:appPackage: com.nopstation.nopcommerce...., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bs.ecommerce.main.Splas..., appPackage: com.nopstation.nopcommerce...., automationName: UiAutomator2, platformName: ANDROID, udid: 0666125197100696}, appium:deviceApiLevel: 30, appium:deviceManufacturer: TECNO MOBILE LIMITED, appium:deviceModel: TECNO KF8, appium:deviceName: 0666125197100696, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 0666125197100696, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 0666125197100696, appium:viewportRect: {height: 1520, left: 0, top: 80, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.BasePage.getElement(BasePage.java:28)
-	at pages.BasePage.clickOnElement(BasePage.java:33)
-	at step_defination.ShoppingCartStep.mike_click_from_list_from_home_page(ShoppingCartStep.java:30)
-	at ✽.Mike click electronics from OUR CATEGORIES list from home page(file:///D:/SQA/Exam/NopStationCart/src/test/java/features/ShoppingCart.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1411054469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1411054469'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [03757758-0fc3-4d38-814a-ccaa5cd253c7, findElement {using=xpath, value=//*[@text=&quot;Electronics&quot;]}]
-Capabilities {appium:appActivity: com.bs.ecommerce.main.Splas..., appium:appPackage: com.nopstation.nopcommerce...., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bs.ecommerce.main.Splas..., appPackage: com.nopstation.nopcommerce...., automationName: UiAutomator2, platformName: ANDROID, udid: 0666125197100696}, appium:deviceApiLevel: 30, appium:deviceManufacturer: TECNO MOBILE LIMITED, appium:deviceModel: TECNO KF8, appium:deviceName: 0666125197100696, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 0666125197100696, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 0666125197100696, appium:viewportRect: {height: 1520, left: 0, top: 80, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.BasePage.getElement(BasePage.java:28)
-	at pages.BasePage.clickOnElement(BasePage.java:33)
-	at step_defination.ShoppingCartStep.mike_click_from_list_from_home_page(ShoppingCartStep.java:30)
-	at ✽.Mike click electronics from OUR CATEGORIES list from home page(file:///D:/SQA/Exam/NopStationCart/src/test/java/features/ShoppingCart.feature:5)
-</pre></div></td>
-<td>45</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -297,29 +76,9 @@ Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should be able to submit their enquiry", "Optional[Contact Us]"</td>
-<td></td>
-<td>25</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-<tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
-<td></td>
-<td>22</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-<tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
-<td></td>
-<td>16</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-<tr>
-<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
-<td></td>
-<td>17</td>
-<td>testrunners.CucumberTestRunner@548a24a</td></tr>
-<tr>
 <td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should be able to login With valid credentials", "Optional[Login]"</td>
 <td></td>
-<td>29</td>
+<td>28</td>
 <td>testrunners.CucumberTestRunner@548a24a</td></tr>
 <tr>
 <td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
@@ -329,12 +88,42 @@ Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7
 <tr>
 <td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
 <td></td>
-<td>22</td>
+<td>18</td>
 <td>testrunners.CucumberTestRunner@548a24a</td></tr>
 <tr>
 <td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
 <td></td>
-<td>16</td>
+<td>19</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
+<td></td>
+<td>19</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
+<td></td>
+<td>18</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer add products in his shopping cart", "Optional[ShoppingCart]"</td>
+<td></td>
+<td>40</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should not be able to login With invalid credentials", "Optional[Login]"</td>
+<td></td>
+<td>18</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should be able to submit their enquiry", "Optional[Contact Us]"</td>
+<td></td>
+<td>25</td>
+<td>testrunners.CucumberTestRunner@548a24a</td></tr>
+<tr>
+<td title='testrunners.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer successfully place order as a guest user", "Optional[PlaceOrder]"</td>
+<td></td>
+<td>101</td>
 <td>testrunners.CucumberTestRunner@548a24a</td></tr>
 </table><p>
 </body>

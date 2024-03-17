@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-17T19:39:55 BDT" name="Default suite" finished-at="2024-03-17T19:43:38 BDT" duration-ms="223356">
+  <suite started-at="2024-03-17T23:23:32 BDT" name="Default suite" finished-at="2024-03-17T23:28:41 BDT" duration-ms="309170">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-17T19:39:55 BDT" name="Default test" finished-at="2024-03-17T19:43:38 BDT" duration-ms="223356">
+    <test started-at="2024-03-17T23:23:32 BDT" name="Default test" finished-at="2024-03-17T23:28:41 BDT" duration-ms="309170">
       <class name="testrunners.CucumberTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:39:55 BDT" name="setUpClass" finished-at="2024-03-17T19:39:55 BDT" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:23:32 BDT" name="setUpClass" finished-at="2024-03-17T23:23:33 BDT" duration-ms="628" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3b088163]]>
+                <![CDATA[org.testng.TestRunner@2a8f8555]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:39:55 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:40:21 BDT" duration-ms="25396" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:23:33 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:23:58 BDT" duration-ms="25225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:40:21 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:40:50 BDT" duration-ms="29349" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:23:58 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:24:26 BDT" duration-ms="28076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:40:50 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:41:12 BDT" duration-ms="22094" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:24:26 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:24:45 BDT" duration-ms="19183" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:41:12 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:41:29 BDT" duration-ms="16810" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:24:45 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:25:05 BDT" duration-ms="19487" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:41:29 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:41:52 BDT" duration-ms="22475" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:25:05 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:25:23 BDT" duration-ms="18358" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:41:52 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:42:11 BDT" duration-ms="19750" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:25:23 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:25:41 BDT" duration-ms="18015" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:42:11 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:42:29 BDT" duration-ms="17571" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:25:41 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:26:01 BDT" duration-ms="19579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:42:29 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:42:45 BDT" duration-ms="16580" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:26:01 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:26:19 BDT" duration-ms="18419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:42:45 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:42:52 BDT" duration-ms="6981" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:26:19 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:28:01 BDT" duration-ms="101847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,91 +162,10 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.core.exception.CucumberException">
-            <message>
-              <![CDATA[Failed to instantiate class step_defination.PlaceOrderStep]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class step_defination.PlaceOrderStep
-at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-... 45 more
-Caused by: java.lang.Error: Unresolved compilation problems: 
-Dimension cannot be resolved to a type
-get cannot be resolved
-Dimension cannot be resolved to a type
-Dimension cannot be resolved to a type
-Dimension cannot be resolved to a type
-driver cannot be resolved to a variable
-Syntax error on token ".", @ expected after this token
-Syntax error on token ")", delete this token
-Syntax error, insert ")" to complete SingleMemberAnnotation
-Syntax error, insert "SimpleName" to complete QualifiedName
-Syntax error, insert "Identifier (" to complete MethodHeaderName
-Syntax error, insert ")" to complete MethodDeclaration
-Syntax error on token "}", delete this token
-
-at pages.CheckoutShippingPage.<init>(CheckoutShippingPage.java:22)
-at step_defination.PlaceOrderStep.<init>(PlaceOrderStep.java:31)
-... 51 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.exception.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:42:52 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T19:43:38 BDT" duration-ms="45796" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:28:01 BDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-17T23:28:41 BDT" duration-ms="40140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,52 +178,10 @@ at step_defination.PlaceOrderStep.<init>(PlaceOrderStep.java:31)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [03757758-0fc3-4d38-814a-ccaa5cd253c7, findElement {using=xpath, value=//*[@text="Electronics"]}]
-Capabilities {appium:appActivity: com.bs.ecommerce.main.Splas..., appium:appPackage: com.nopstation.nopcommerce...., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bs.ecommerce.main.Splas..., appPackage: com.nopstation.nopcommerce...., automationName: UiAutomator2, platformName: ANDROID, udid: 0666125197100696}, appium:deviceApiLevel: 30, appium:deviceManufacturer: TECNO MOBILE LIMITED, appium:deviceModel: TECNO KF8, appium:deviceName: 0666125197100696, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 0666125197100696, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 0666125197100696, appium:viewportRect: {height: 1520, left: 0, top: 80, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [03757758-0fc3-4d38-814a-ccaa5cd253c7, findElement {using=xpath, value=//*[@text="Electronics"]}]
-Capabilities {appium:appActivity: com.bs.ecommerce.main.Splas..., appium:appPackage: com.nopstation.nopcommerce...., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bs.ecommerce.main.Splas..., appPackage: com.nopstation.nopcommerce...., automationName: UiAutomator2, platformName: ANDROID, udid: 0666125197100696}, appium:deviceApiLevel: 30, appium:deviceManufacturer: TECNO MOBILE LIMITED, appium:deviceModel: TECNO KF8, appium:deviceName: 0666125197100696, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 0666125197100696, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 0666125197100696, appium:viewportRect: {height: 1520, left: 0, top: 80, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 03757758-0fc3-4d38-814a-ccaa5cd253c7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at pages.BasePage.getElement(BasePage.java:28)
-at pages.BasePage.clickOnElement(BasePage.java:33)
-at step_defination.ShoppingCartStep.mike_click_from_list_from_home_page(ShoppingCartStep.java:30)
-at ✽.Mike click electronics from OUR CATEGORIES list from home page(file:///D:/SQA/Exam/NopStationCart/src/test/java/features/ShoppingCart.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T19:43:38 BDT" name="tearDownClass" finished-at="2024-03-17T19:43:38 BDT" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.CucumberTestRunner@548a24a]" started-at="2024-03-17T23:28:41 BDT" name="tearDownClass" finished-at="2024-03-17T23:28:41 BDT" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

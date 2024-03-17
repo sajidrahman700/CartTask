@@ -1,8 +1,6 @@
 package step_defination;
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -32,39 +30,6 @@ public class PlaceOrderStep {
 	CheckoutPaymentPage checkoutPaymentPage = new CheckoutPaymentPage();
 	PaymentInformationPage paymentInformationPage = new PaymentInformationPage();
 	OrderConfirmPage orderConfirmPage = new OrderConfirmPage();
-	
-	
-	 @SuppressWarnings("resource")
-	public static String[][] readCSVData(String filePath)throws IOException {
-	        BufferedReader reader = new BufferedReader(new FileReader("src\\test\\java\\resources\\NopStationCart.csv"));
-	        String line;
-	        int rowCount = 0;
-	        int colCount = 0;
-
-	        
-	        while ((line = reader.readLine()) != null) {
-	            rowCount++;
-	            String[] columns = line.split(",");
-	            colCount = Math.max(colCount, columns.length);
-	        }
-
-	        String[][] data = new String[rowCount][colCount];
-	        reader = new BufferedReader(new FileReader("src\\test\\java\\resources\\NopStationCart.csv"));
-	        int row = 0;
-
-	        while ((line = reader.readLine()) != null) {
-	            String[] columns = line.split(",");
-	            for (int col = 0; col < columns.length; col++) {
-	                data[row][col] = columns[col];
-	            }
-	            row++;
-	        }
-
-	        reader.close();
-	        return data;
-	    }
-
-	
 	
 	
 	@Given("product add to cart")
@@ -98,38 +63,41 @@ public class PlaceOrderStep {
 	}
 
 	@Then("Mike input all the details in checkout billing details page and click continue")
-	public void mike_input_all_the_details_in_checkout_billing_details_page_and_click_continue() {
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.firstNameInputField, "Sajid");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.lastNameInputField, "Rahman");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.emailInputField, "Hello@gmail.com");
+	public void mike_input_all_the_details_in_checkout_billing_details_page_and_click_continue() throws IOException {
+		String[][] data = CheckoutBillingAddressPage.getData("src\\test\\java\\resources\\NopStationCart.csv");
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.firstNameInputField, data[1][0]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.lastNameInputField, data[1][1]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.emailInputField, data[1][2]);
 		checkoutBillingAddressPage.clickOnElement(checkoutBillingAddressPage.countrySelectField);
-		checkoutBillingAddressPage.scrollInToViewAppium("Bangladesh");
+		checkoutBillingAddressPage.scrollInToViewAppium(data[1][3]);
 		checkoutBillingAddressPage.clickOnElement(checkoutBillingAddressPage.chooseCountry_Bangladesh);
 		checkoutBillingAddressPage.clickOnElement(checkoutBillingAddressPage.stateSelectField);
-		checkoutBillingAddressPage.scrollInToViewAppium("ঢাকা");
+		checkoutBillingAddressPage.scrollInToViewAppium(data[1][4]);
 		checkoutBillingAddressPage.clickOnElement(checkoutBillingAddressPage.chooseState_Dhaka);
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.companyInputField, "Hello");
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.companyInputField, data[1][5]);
 		checkoutBillingAddressPage.scrollInToViewAppium("Fax");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.cityInputField, "Dhaka");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.streetAddressInputField, "Road#12");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.streetAddress2InputField, "House#15");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.postalCodeInputField, "1209");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.phoneNumberInputField, "01200000000");
-		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.faxInputField, "2307");
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.cityInputField, data[1][6]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.streetAddressInputField, data[1][7]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.streetAddress2InputField, data[1][8]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.postalCodeInputField, data[1][9]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.phoneNumberInputField, data[1][10]);
+		checkoutBillingAddressPage.writeOnAElement(checkoutBillingAddressPage.faxInputField, data[1][11]);
 		checkoutBillingAddressPage.clickOnElement(checkoutBillingAddressPage.continueButton);
 	    
 	}
 
 	@Then("Mike select Next Day Air as shipping method and click continue")
 	public void mike_select_as_shipping_method_and_click_continue() {
-		checkoutShippingPage.clickOnElement(checkoutShippingPage.nextDayAirOption);
+		
 		try {
-		checkoutShippingPage.scrollInToViewAppium("The two day air shipping");
+			checkoutShippingPage.clickOnElement(checkoutShippingPage.nextDayAirOption);
+		    checkoutShippingPage.scrollInToViewAppium("The two day air shipping");
+		    checkoutShippingPage.clickOnElement(checkoutShippingPage.continueButton);
 		}
 		catch(Exception e) {
-			
+			System.out.println(e);
 		}
-		checkoutShippingPage.clickOnElement(checkoutShippingPage.continueButton);
+		
 	    
 	}
 
@@ -157,7 +125,7 @@ public class PlaceOrderStep {
 
 	@Then("Verify order place successfully with popup message Your order has been successfully processed!")
 	public void verify_order_place_successfully_with_popup_message() {
-		Assert.assertEquals(orderConfirmPage.getMsgSubString(), "Your order has been successfully processed!\r\n");
+		Assert.assertEquals(orderConfirmPage.getMsgSubString(), "Your order has been successfully processed!\n");
 
 
 	}

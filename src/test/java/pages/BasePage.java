@@ -22,7 +22,6 @@ import io.appium.java_client.AppiumBy;
 
 
 
-
 public class BasePage {
 	public WebElement getElement(By locator) {
 		return getBrowser().findElement(locator);
@@ -141,6 +140,8 @@ public class BasePage {
 		 Actions actions = new Actions(getBrowser());
 	     actions.scrollToElement(x);
 	 }
+	 
+	 
 	
 
 }
